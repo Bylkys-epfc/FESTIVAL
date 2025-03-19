@@ -2398,6 +2398,10 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			font-family:"Courier New", Courier, monospace; 
+			font-size:20px;
+			color:#ffffff; 
+			text-align:center;
 		}
 
 			.image.fit img {
