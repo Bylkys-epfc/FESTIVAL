@@ -1,3 +1,6 @@
+<!-- Fait par Selima Williams -->
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,196 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    /* En-tête fixe */
-    #header {
-      background-color: rgba(0, 0, 0, 0.5); /* Fond transparent avec légère ombre noire */
-      color: white;
-      padding: 20px 0; /* Plus d'espace autour de l'en-tête */
-      text-align: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour améliorer la visibilité du texte */
-      border-radius: 0 0 20px 20px; /* Arrondir les coins en bas uniquement */
-      opacity: 0; /* Rendre initialement invisible */
-      animation: fadeIn 10s forwards; /* Animation de fondu */
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-   
-
-    #header nav ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 10px; /* Ajout d'un petit espace au-dessus du menu */
-    }
-
-    #header nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    #header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1em; /* Taille de texte un peu plus grande pour une meilleure lisibilité */
-      transition: color 0.3s ease; /* Ajout d'une transition pour un effet plus agréable */
-    }
-
-    #header nav ul li a:hover {
-      color: #ff6347; /* Changement de couleur au survol */
-    }
-
-    /* Conteneur principal */
-    #wrapper {
-      width: 80%; /* Réduit la largeur de l'encadrement pour que le fond soit mieux visible */
-      margin: 160px auto 0 auto; /* Centrer le contenu et éviter le chevauchement avec l'entête fixe */
-      padding: 10px 0; /* Réduit l'espacement interne */
-      flex-grow: 1; /* Permet à l'espace de se développer pour que le footer soit toujours en bas */
-    }
-section#home-intro {
-
-      opacity: 0; /* Rendre initialement invisible */
-      animation: fadeIn 10s forwards; /* Animation de fondu */
-    
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-text-align: center;
-}
- /* Style pour l'image dans le header */
-    section#home-intro img {
-      width: 400px; /* Réduit la taille de l'image à 70px */
-      height: 400px; /* Assure que l'image reste carrée */
-      border-radius: 50%; /* Arrondir les bords à 50% */
-      object-fit: cover; /* Redimensionne l'image sans déformation */
-      margin-bottom: 10px; /* Espace entre l'image et le titre */
-    }
-    Section.h1 {
-      font-size: 2.5em; /* Légèrement agrandi pour plus de présence */
-    }
-    section.p {
-      font-size: 1.1em; /* Taille réduite pour rendre le texte plus discret */
-      color: rgba(255, 255, 255, 0.7); /* Réduit l'opacité pour le rendre plus discret */
-      margin-top: 10px; /* Ajout d'un petit espace au-dessus */
-    }
-
-    section#about {
-      padding: 40px 20px; /* Ajout d'un peu d'espace pour que l'image puisse dépasser */
-      position: relative; /* Nécessaire pour positionner l'image en dehors du cadre */
-      overflow: visible; /* Permet à l'image de sortir de la section */
-    }
-	
-section#about img {
-      width: 100%; /* L'image prend toute la largeur disponible */
-      max-width: 500px; /* Limite la taille de l'image */
-      height: auto; /* Garder les proportions */
-      object-fit: cover; /* Redimensionner l'image sans déformation */
-	  align-items: center;
-	  display: flex;
-  justify-content: center;
-      border-radius:4%; /* Arrondir les bords */
-      margin-bottom: 20px; /* Ajout d'un espace sous l'image avant le texte */
-	  }
-	  
-	  section#highlight img {
-      width: 100%; /* L'image prend toute la largeur disponible */
-      max-width: 500px; /* Limite la taille de l'image */
-	  align-items: center;
-	  display: flex;
-  justify-content: center;
-      height: auto; /* Garder les proportions */
-      object-fit: cover; /* Redimensionner l'image sans déformation */
-      border-radius:4%; /* Arrondir les bords */
-      margin-bottom: 20px; /* Ajout d'un espace sous l'image avant le texte */
-	  }
-
-    /* Liste avec emoji note de musique */
-    ul {
-      list-style-type: none; /* Supprimer le style de liste par défaut */
-      padding-left: 0;
-    }
-
-    ul li {
-      font-size: 1.1em; /* Taille de texte pour les éléments de la liste */
-      margin-bottom: 8px;
-    }
-
-    ul li::before {
-      content: "🎵 "; /* Ajouter l'emoji de la note de musique avant chaque élément de la liste */
-    }
-
-    /* Footer */
-    footer {
-      background-color: rgba(0, 0, 0, 0.5); /* Fond transparent avec légère ombre noire */
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 0; /* Réduit le padding du footer */
-      text-align: center;
-      width: 100%;
-      position: relative;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour améliorer la visibilité du texte */
-      margin-top: 40px;
-      border-radius: 20px 20px 0 0; /* Arrondir les coins en haut uniquement */
-    }
-
-    footer .footer-content {
-      max-width: 1200px;
-      width: 100%;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    footer h2 {
-      font-size: 1.5em;
-      margin: 0;
-    }
-
-    footer .actions {
-      margin-top: 10px;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    footer .copyright {
-      font-size: 0.9em;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="C:\Users\Selima Joyce\Documents\Electro categorie\CSS_electro.css">
 </head>
 <body>
   <div id="wrapper">
@@ -205,26 +19,26 @@ section#about img {
       
       <nav>
         <ul>
-          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#home">Accueil</a></li>
           <li><a href="#about">À Propos</a></li>
           <li><a href="#lineup">Lineup</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- New Section for Home Heading and Description -->
+    <!-- Intro -->
     <section id="home-intro">
 	
       <h1>Electro Music Festival</h1>
       
-	  <img src="assets/images/electro_music_icon.jpg" alt="Logo Electro Festival">
+	  <img src="C:\Users\Selima Joyce\Documents\Electro categorie\1000006960.jpg" alt="Logo Electro Festival">
 	  <p>Exploration de la musique électronique et de ses multiples facettes</p>
     </section>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main id="main">
-      <!-- About Section -->
+      <!-- About -->
       <section id="about" class="main">
         <div>
           <h2>De la techno à la house, l'évolution de la musique électronique</h2>
@@ -236,7 +50,7 @@ section#about img {
         </div>
       </section>
 
-      <!-- Festival Highlight Section -->
+      <!-- Highlight -->
       <section id="highlight" class="main">
         <div>
           <h2>Electro Vibes : Un Festival Immergé dans la Culture Électronique</h2>
@@ -248,12 +62,12 @@ section#about img {
         </div>
       </section>
 
-      <!-- Lineup Section -->
+      <!-- Lineup -->
       <section id="lineup" class="main">
         <h2>Lineup</h2>
         <ul>
-          <li><a href="Carl Cox.html">Carl Cox</a></li>
-          <li><a href="Charlotte de Witte.html">Charlotte de Witte</a></li>
+          <li><a href="C:\Users\Selima Joyce\Documents\Electro categorie\Fiche_Carl_Cox.html">Carl Cox</a></li>
+          <li><a href="C:\Users\Selima Joyce\Documents\Electro categorie\Fiche_Artiste_Charlotte_Witte.html">Charlotte de Witte</a></li>
         </ul>
       </section>
     </main>
@@ -268,12 +82,9 @@ section#about img {
             <li><a href="contact.html" class="button">Contactez-nous</a></li>
           </ul>
         </section>
-        <p class="copyright">&copy; 2025 Komet Festival. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p class="copyright">&copy; Electro Music Festival. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
       </div>
-    </footer>
-  </div>
-
-  <!-- Scripts -->
+	    <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrollex.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -281,5 +92,8 @@ section#about img {
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+    </footer>
+
+
 </body>
 </html>
