@@ -1,0 +1,82 @@
+<!-- Fait par Selima Williams -->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche Artiste - Carl Cox</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <link rel="stylesheet" href="C:\Users\Selima Joyce\Documents\Electro categorie\CSS_fiche_artiste.css">
+</head>
+
+<body>
+
+    <!-- Lecteur audio -->
+    <div class="music-header">
+        <audio controls autoplay>
+            <source src="C:\Users\Selima Joyce\Documents\Electro categorie\CArl Cox - Jaguar.mp3" type="audio/mp3">
+            
+        </audio>
+    </div>
+
+    <!-- Contenu du body -->
+    <section class="header-content">
+        <h1>DJ Carl Cox</h1>
+        <img src="https://static.ra.co/images/profiles/square/carlcox.jpg?dateUpdated=1639475057000" alt="Carl Cox">
+        <p>Le maître de l'électro</p>
+    </section>
+
+    <section class="bio">
+        <h2>Biographie</h2>
+        <p>Carl Cox est une légende de la scène électronique, reconnu pour ses sets énergiques et son influence sur le monde de la techno et de la house. Avec plus de 30 ans de carrière, il est un pilier des festivals internationaux et un pionnier du genre.</p>
+        <div class="images">
+            <img src="https://djlifemag.com/wp-content/uploads/2023/03/Carl-Cox-credit-Dan-Reid.jpg" alt="Carl Cox 1">
+            <img src="https://exronmusic.com/wp-content/uploads/2024/02/Carl-Cox-Cover.jpeg" alt="Carl Cox 2">
+        </div>
+    </section>
+
+    <section class="performances">
+        <h2>Programmation</h2>
+        <ul>
+            <li>16:00 - 19:00 : Grande scene</li>
+            <li>22:00 - 01:00 : Grande sce</li>
+            <li>1:00 - 5:00 : Scene Techno</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact et réseaux sociaux</h2>
+        <p>Retrouvez Carl Cox sur ses réseaux sociaux:</p>
+        <ul>
+            <li>&copy; Instagram: <a href="https://instagram.com/carlcox" target="_blank">@CarlCox</a></li>
+            <li>&copy; Twitter: <a href="https://twitter.com/carlcox" target="_blank">@CarlCox</a></li>
+        </ul>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h2>Contact</h2>
+            <p>Pour toute question ou information supplémentaire, n'hésitez pas à nous contacter :</p>
+            <ul class="actions">
+                <li><a href="contact.html" class="button">Contactez-nous</a></li>
+            </ul>
+        </section>
+        <p class="copyright">&copy; Electro Music Festival. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    </footer>
+
+    
+
+</body>
+</html>
