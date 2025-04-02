@@ -3823,12 +3823,3 @@ input, select, textarea {
 		color: #01447e;
 		text-decoration: underline;
 	}
-
-
-	table{
-		width: 100%;
-		border-collapse: collapse;
-		border-radius: 10px;
-		margin-bottom: 1em;
-		
-	}
