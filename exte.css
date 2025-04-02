@@ -1,0 +1,19 @@
+
+input:focus, textarea:focus {
+  background-color: #FFFF99; 
+  
+}
+
+
+input[type="email"]:invalid, input[type="url"]:invalid {
+  background-color: #FFCCCC; /
+  
+}
+
+
+.merci-symbol {
+            font-size: 40px;
+            color: gold; 
+            display: none; 
+        }
+  
