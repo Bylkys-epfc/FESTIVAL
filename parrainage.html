@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Fdil Nasr-Eddine" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KOMET Entertainment Festival</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+</head>
+
+<body class="is-preload">
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1>KOMET FESTIVAL</h1>
+      <p>On n'attend pas que les étoiles s'alignent pour se lancer.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="categories.html">Catégories</a></li>
+        <li><a href="tarif.html">Tarif</a></li>
+        <li><a href="mentions.html">Mentions légales</a></li>
+        <li class="active"><a href="parrainage.html">Parrainage</a></li>
+        <li><a href="subventions.html">Subventions</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div id="main">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Accueil</a></li>
+          <li>Parrainage</li>
+        </ul>
+
+      <section id="first" class="main special">
+        <div class="spotlight">
+          <div class="content">
+            <form id="parrainage-form" action="support.php" method="post">
+              <fieldset>
+                <legend>Formulaire de Parrainages</legend>
+
+                <!-- Genre -->
+                <h3>Choisissez un genre</h3>
+                <select name="genre" required>
+                  <option value="">Sélectionnez une option</option>
+                  <option value="monsieur">Monsieur</option>
+                  <option value="madame">Madame</option>
+                  <option value="autre">Autre</option>
+                  <option value="nepasdire">Je préfère ne pas le dire</option>
+                </select>
+
+                <!-- Nom et prénom -->
+                <label>Nom et prénom du parrain ou de la marraine</label>
+                <input type="text" name="nom" placeholder="Nom" required />
+                <input type="text" name="prenom" placeholder="Prénom" required />
+
+                <!-- Adresse mail -->
+                <label>Adresse mail</label>
+                <input type="email" name="mail" placeholder="exemple@gmail.com" required />
+
+                <!-- Montant -->
+                <label>Montant du soutien</label>
+                <label><input type="radio" name="montant" value="5" required /> 5€</label>
+                <label><input type="radio" name="montant" value="15" required /> 15€</label>
+                <label>
+                  <input type="radio" name="montant" value="20" required />
+                  20€ <span class="thanks-symbol">✨</span>
+                </label>
+
+                <!-- Préférences -->
+                <h3>Choisissez une ou plusieurs préférences</h3>
+                <label><input type="checkbox" name="" id="encadrement" value="encadrement" /> Encadrement des bénévoles</label>
+                <label><input type="checkbox" name="preferences" id="gestion" value="gestion" /> Gestion des invités</label>
+                <label><input type="checkbox" name="preferences" id="marketing" value="marketing" /> Marketing et publicité</label>
+                <label><input type="checkbox" name="preferences" id="selectionfilm" value="selectionfilm" /> Sélection des films/concerts</label>
+
+                <!-- Commentaires -->
+                <h3>Commentaires</h3>
+                <textarea name="commentaire" rows="6" placeholder="Commentaire"></textarea>
+
+                <!-- Conditions -->
+                <h3>Conditions générales</h3>
+                <label>
+                  <input type="checkbox" name="accepte" required />
+                  J'accepte les conditions générales et la politique de confidentialité des données.
+                </label>
+
+                <!-- Bouton de soumission -->
+                <button type="submit">Envoyer</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section>
+        <h2>Contact</h2>
+        <p>Si vous avez des questions ou des préoccupations, veuillez nous contacter grâce à cette page.</p>
+        <ul class="actions">
+          <li><a href="contact.html" class="button">Contactez-nous</a></li>
+        </ul>
+      </section>
+      <section>
+        <ul class="icons">
+          <li>
+            <a href="https://www.instagram.com/komet.ent?igsh=ZDExb0JNbkQ2aXYy" class="icon brands fa-instagram">
+              <span class="label">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="copyright">
+        &copy; 2025 Komet Festival. Design: <a href="https://html5up.net">HTML5 UP</a>.
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

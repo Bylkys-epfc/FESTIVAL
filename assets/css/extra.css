@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+/* Bungee Tint font. Importée depuis Google Font. */
+legend {
+    font-family: 'Bungee Tint';
+    font-size: 1.5em;
+}
+
+body.subventions {
+    background-image: url('../images/funding.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+body.subventions #main {
+    position: relative;
+    z-index: 1;
+}
+
+body.subventions #main table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.subventions #main table tr td {
+    border-bottom: 1px dashed #00008B;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+body.subventions #main table th:not(:first-child),
+body.subventions #main table td:not(:first-child) {
+    border-left: 1px solid #000;
+}
+
+body.subventions #main table caption {
+    font-family: 'Fugaz One';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.subventions #main table tbody tr:hover {
+    background-color: DodgerBlue;
+}
+
+body.subventions #main table tbody tr td:hover {
+    background-color: #88d3ff;
+}
+
+/* Parrainage style. Fait pour l'examen. */
+#parrainage-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#parrainage-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#parrainage-form legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#parrainage-form h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#parrainage-form input[type="text"],
+#parrainage-form input[type="email"],
+#parrainage-form select,
+#parrainage-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#parrainage-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#parrainage-form input:focus,
+#parrainage-form select:focus,
+#parrainage-form textarea:focus {
+    background-color: #d4d419;
+}
+
+#parrainage-form input[type="email"]:invalid,
+#parrainage-form input[type="url"]:invalid {
+    background-color: #ffc0cb;
+}
+
+#parrainage-form .thanks-symbol {
+    display: none;
+}
+
+#parrainage-form input[type="radio"]#twentyeuros:checked + label .thanks-symbol {
+    display: inline;
+}
+
+@media screen and (max-width: 400px) {
+    #parrainage-form input:not([type="radio"]):not([type="checkbox"]) ~ label {
+        display: none;
+    }
+}
+
+#parrainage-form input[type="radio"] + label,
+#parrainage-form input[type="checkbox"] + label {
+    display: inline;
+}
